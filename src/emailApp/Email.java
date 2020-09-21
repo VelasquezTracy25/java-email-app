@@ -4,13 +4,15 @@ import java.util.Scanner;
 
 public class Email {
 
-    public String firstName;
-    public String lastName;
-    public String password;
-    public String department;
-    public int mailboxCapacity;
+    private String firstName;
+    private String lastName;
+    private String password;
+    private String department;
+    private int mailboxCapacity;
     private int defaultPasswordLength = 12;
-    public String alternateEmail;
+    private String email;
+    private String alternateEmail;
+    private String companyWebsite = "myCompany.com";
 
     //Constructor to receive the first name and last name
     public Email(String firstName, String lastName) {
@@ -27,6 +29,9 @@ public class Email {
     this.password = randomPassword(defaultPasswordLength);
         System.out.println("Your password is: " + password);
 
+    //generate email address firstname.lastname@department.company.com
+    this.email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + companyWebsite;
+        System.out.println(email);
     }
 
     //Ask for the department
