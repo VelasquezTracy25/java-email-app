@@ -12,7 +12,7 @@ public class Email {
     private int defaultPasswordLength = 12;
     private String email;
     private String alternateEmail;
-    private String companyWebsite = "myCompany.com";
+    private String companyWebsite = "mycompany.com";
 
     //Constructor to receive the first name and last name
     public Email(String firstName, String lastName) {
@@ -30,7 +30,7 @@ public class Email {
         System.out.println("Your password is: " + password);
 
     //generate email address firstname.lastname@department.company.com
-    this.email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + companyWebsite;
+    this.email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companyWebsite;
         System.out.println(email);
     }
 
