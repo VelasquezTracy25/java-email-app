@@ -23,7 +23,7 @@ public class Email {
 
         //call a method asking for dept - return dept
         this.department = setDepartment();
-        System.out.println("Department entered" + department);
+        System.out.println("Department entered: " + department);
 
         //call a method that returns a random password
         this.password = randomPassword(defaultPasswordLength);
@@ -100,7 +100,7 @@ public class Email {
 
     //method that print all info
     public String showInfo() {
-        return "DISPLAY NAME: " + firstName + " " + lastName + "\nCOMPANY EMAIL: " + email + "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
+        return "DISPLAY NAME: " + firstName + " " + lastName + "\nPERSONAL EMAIL: " + alternateEmail + "\nCOMPANY EMAIL: " + email + "\nMAILBOX CAPACITY: " + mailboxCapacity + "mb";
     }
 
 }
